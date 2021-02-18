@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Popup Traffit - Miroslaw Drozd</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,600,700&display=swap" rel="stylesheet"> 
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </head>
+    <body>
+        <div id="popupTrigger"></div>
+        <div id="popupWindow" class="modal">
+          <div class="modal__content">
+            
+            <div class="modal__item--main">
+              <h1 class="modal__title">Zaczekaj chwilę!<br>Odbierz <span class="modal__title--accent">10% rabatu </span> na subskrypcję!</h1>
+              <p class="modal__text">Wypełnij formularz, odbierz swój rabat i <span class="modal__text--bold">zaoszczędź pieniądze! </span></p>
+              <div>
+                <form action="myform.php" method="post">
+                  <label for="name">Imię</label>
+                  <input type="text" name ="name" class="modal__input" /><br>
+                  <label for="surname">Nazwisko</label>
+                  <input type="text" name ="surname"  class="modal__input" /><br>
+                  <label for="name">Email</label>
+                  <input type="text" name ="email" class="modal__input" /><br>
+                  <input type="submit" class="modal__cta" name="submit" value="Odbieram rabat" />
+                </form>
+              </div>
+              
+              <div class="modal__drop">
+                <a onclick="closeModal()">Nie chcę rabatu</a>
+              </div>   
+            </div>
+            <div class="modal__item--side">
+              <img src="images/piggy.png" class="modal__image" />
+            </div>
+            <span onclick="closeModal()" class="modal__close">&times;</span>
+          </div>
+        </div>
+    </body>
+</html>
